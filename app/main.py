@@ -9,7 +9,7 @@ app = FastAPI(
 )
 
 origins = [
-    "https://pythia-front.vercel.app/",
+    "https://pythia-front.vercel.app",
 ]
 app.add_middleware(
     CORSMiddleware,
