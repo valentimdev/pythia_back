@@ -8,7 +8,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
-origins = ["*"] # Em produção, restrinja para o endereço do seu front-end
+origins = [
+    "https://pythia-front.vercel.app/",
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
